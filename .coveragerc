@@ -1,0 +1,17 @@
+[run]
+source = pybiblecoin
+
+[report]
+omit =
+  */fixtures/*
+  */tests/*
+  */utils/*
+  */biblecoin/fastvm.py
+  */biblecoin/spv.py
+
+exclude_lines =
+  pragma: no cover
+  def __repr__
+  raise AssertionError
+  raise NotImplementedError
+  if __name__ == .__main__.:
